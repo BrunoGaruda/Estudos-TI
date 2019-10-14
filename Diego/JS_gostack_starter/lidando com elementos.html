@@ -1,0 +1,29 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title> Curso Javascript </title>
+</head>
+
+<body>
+  <div id="app">
+    <input id="nome">
+  </div>
+
+  <script>
+    var linkElement = document.createElement('a');
+    linkElement.setAttribute('href', 'https://www.guildwars2.com');
+    linkElement.setAttribute('title', 'guildwars2');
+
+    var textElement = document.createTextNode('Guild Wars2!!!');
+    linkElement.appendChild(textElement);
+
+    var containerElement = document.querySelector('#app');
+    containerElement.appendChild(linkElement);
+
+    var inputElement = document.querySelector('#nome');
+    containerElement.removeChild(inputElement);
+  </script>
+</body>
+
+</html>
